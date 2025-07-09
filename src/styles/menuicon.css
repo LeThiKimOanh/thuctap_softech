@@ -1,0 +1,89 @@
+.menu-icon {
+  color: #00bcd4 !important;
+}
+
+.menu-noti {
+  color: #3f51b5 !important;
+}
+
+.menu-off {
+  color: #ffc107 !important;
+}
+
+.menu-tool {
+  color: #9e9e9e !important;
+}
+
+.menu-book {
+  color: #3f51b5 !important;
+}
+
+.menu-class {
+  color: #4caf50 !important;
+}
+
+.menu-game {
+  color: #3f51b5 !important;
+}
+
+.menu-guide {
+  color: #ff5722 !important;
+}
+
+.menu-library {
+  color: #616161 !important;
+}
+
+.menu-question {
+  color: #424242 !important;
+}
+
+.menu-mg {
+  color: #616161 !important;
+}
+
+.menu-bank {
+  color: #009688 !important;
+}
+
+.menu-user {
+  color: #2196f3 !important;
+}
+
+.menu-type {
+  color: #9e9e9e !important;
+}
+.menu-user,
+.menu-noti,
+.menu-book,
+.menu-off,
+.menu-tool,
+.menu-class,
+.menu-game,
+.menu-guide,
+.menu-library,
+.menu-question,
+.menu-mg,
+.menu-bank,
+.menu-type,
+.menu-icon {
+  color: #888;
+  transition: color 0.3s ease;
+}
+
+.menu-user.active,
+.menu-noti.active,
+.menu-book.active,
+.menu-off.active,
+.menu-tool.active,
+.menu-class.active,
+.menu-game.active,
+.menu-guide.active,
+.menu-library.active,
+.menu-question.active,
+.menu-mg.active,
+.menu-bank.active,
+.menu-type.active,
+.menu-icon.active {
+  color: #0d6ac1;
+}

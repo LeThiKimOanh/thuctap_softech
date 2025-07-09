@@ -1,10 +1,12 @@
 import React from "react";
 import { Modal, Button, Form, Input, Typography } from "antd";
-
+import { useNavigate } from "react-router-dom";
 const { Title, Link } = Typography;
 
 const LoginFormModal = ({ visible, onClose }) => {
+  console.log("LoginFormModal:", LoginFormModal);
   const [form] = Form.useForm();
+  const navigate = useNavigate();
 
   const onFinish = async (values) => {
     try {
@@ -30,7 +32,7 @@ const LoginFormModal = ({ visible, onClose }) => {
       console.log("Đăng nhập thành công", data);
 
       localStorage.setItem("token", data.access_token);
-      alert("Đăng nhập thành công!");
+      navigate("/admin");
 
       onClose();
     } catch (err) {
@@ -45,7 +47,7 @@ const LoginFormModal = ({ visible, onClose }) => {
       onCancel={onClose}
       footer={null}
       width={800}
-      bodyStyle={{ padding: 0 }}
+      styles={{ body: { padding: 0 } }}
       closable={true}
     >
       <div style={{ display: "flex", minHeight: 400 }}>

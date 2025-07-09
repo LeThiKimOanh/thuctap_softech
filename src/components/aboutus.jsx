@@ -49,7 +49,7 @@ const FeatureCards = () => {
         {features.map((feature, index) => (
           <Col xs={24} sm={12} md={8} key={index}>
             <Card
-              bordered={false}
+              variant="borderless"
               style={{
                 borderRadius: 12,
                 boxShadow: "0 8px 24px rgba(0, 0, 0, 0.05)",
